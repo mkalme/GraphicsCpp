@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Logic">
+      <UniqueIdentifier>{bad876a6-3a54-470f-a697-b4edc2c5f7f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Object">
+      <UniqueIdentifier>{3ea9c260-ed0b-49b8-92e3-db85503b26ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Math">
+      <UniqueIdentifier>{994830e5-e51e-416a-a8fb-1a08bddc4ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Surface">
+      <UniqueIdentifier>{0c8a6257-a64c-402b-9c00-99740349292e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Render">
+      <UniqueIdentifier>{a2027b5e-4610-437d-bea2-472e4465dcd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{52c01436-1465-4999-830a-cc003bdcb4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Camera">
+      <UniqueIdentifier>{f3f1075e-8a8c-4bd5-b887-bfaf889f5252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Light">
+      <UniqueIdentifier>{e0a44863-6298-416c-ba60-b620d169e9bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Surface\UvSurface">
+      <UniqueIdentifier>{a8985c28-33c2-45c6-aeb8-fda4a3bf5fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Sky">
+      <UniqueIdentifier>{670a8c5a-8506-4312-bc39-edaadb2f51b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Logic\Surface\FlatSurface">
+      <UniqueIdentifier>{65f2a2ae-b3ab-49d1-8a25-e6d69a8c5d82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\Window.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\FirstPerson\DirectionalInertia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\FirstPerson\Inertia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\Font\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\Font\FontPainter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\Font\FontSettings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\Font\RichText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gui\Font\RichFontSegment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\FirstPerson\DirectionalInertia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\FirstPerson\Inertia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\Font\Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\Font\FontPainter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\Font\FontSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\Font\RichText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\Font\RichFontSegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Gui\PngSaver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\External\stb_image_write.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

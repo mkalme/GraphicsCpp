@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a3816817-fe71-4a13-a97d-b9d47d9b1489}</ProjectGuid>
+    <RootNamespace>Graphics</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)x64_lib\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\ConeSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Cone.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\CustomPlaneMesh.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\FlatPolygonSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\FlatPolygon.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\BoxSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Box.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Uv\CheckedUvSurfaceSerializer.h" />
+    <ClInclude Include="Header\Scene\Surface\Uv\CheckedUvSurface.h" />
+    <ClInclude Include="Header\Serializer\Scene\Fog\FormulaFogSerializer.h" />
+    <ClInclude Include="Header\Scene\Fog\Fog.h" />
+    <ClInclude Include="Header\Scene\Fog\Formula\FormulaFog.h" />
+    <ClInclude Include="Header\Scene\Fog\Formula\FormulaParser.h" />
+    <ClInclude Include="Header\Scene\Fog\Formula\CallStack.h" />
+    <ClInclude Include="Header\Serializer\Scene\Light\DirectionalLightSerializer.h" />
+    <ClInclude Include="Header\Scene\Light\DirectionalLight.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\CylinderSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Uv\GeneratedSquareUvSurfaceSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Flat\CheckedFlatSurfaceSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Camera\PerspectiveCameraSerializer.h" />
+    <ClInclude Include="Header\External\json.hpp" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Cylinder.h" />
+    <ClInclude Include="Header\Scene\Surface\Uv\GeneratedSquareUvSurface.h" />
+    <ClInclude Include="Header\External\stb_image.h" />
+    <ClInclude Include="Header\Math\Ray.h" />
+    <ClInclude Include="Header\Math\Rotation.h" />
+    <ClInclude Include="Header\Math\Vec3f.h" />
+    <ClInclude Include="Header\Renderer\Renderer.h" />
+    <ClInclude Include="Header\Renderer\ThreadInfo.h" />
+    <ClInclude Include="Header\Scene\Camera\Camera.h" />
+    <ClInclude Include="Header\Scene\Light\Light.h" />
+    <ClInclude Include="Header\Scene\Scene.h" />
+    <ClInclude Include="Header\Scene\Shape\Object.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Plane.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Sphere.h" />
+    <ClInclude Include="Header\Scene\Sky\Sky.h" />
+    <ClInclude Include="Header\Scene\Sky\SkyBox.h" />
+    <ClInclude Include="Header\Scene\Sky\SolidColorSky.h" />
+    <ClInclude Include="Header\Scene\Surface\Flat\CheckedFlatSurface.h" />
+    <ClInclude Include="Header\Scene\Surface\Flat\FlatSurface.h" />
+    <ClInclude Include="Header\Scene\Surface\Flat\RotatedFlatSurface.h" />
+    <ClInclude Include="Header\Scene\Surface\Flat\SolidFlatSurface.h" />
+    <ClInclude Include="Header\Scene\Surface\SurfaceIntersection.h" />
+    <ClInclude Include="Header\Scene\Surface\SurfaceResult.h" />
+    <ClInclude Include="Header\Scene\Surface\Uv\SolidUvSurface.h" />
+    <ClInclude Include="Header\Scene\Surface\Uv\TexturedUvSurface.h" />
+    <ClInclude Include="Header\Scene\Surface\Uv\UvSurface.h" />
+    <ClInclude Include="Header\Utilities\ImageBuffer\GlfwImageBuffer.h" />
+    <ClInclude Include="Header\Utilities\ImageBuffer\ImageBuffer.h" />
+    <ClInclude Include="Header\Utilities\ImageBuffer\StbImageBuffer.h" />
+    <ClInclude Include="Header\Serializer\ItemSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Light\PointLightSerializer.h" />
+    <ClInclude Include="Header\Serializer\KeyedItemSerializer.h" />
+    <ClInclude Include="Header\Scene\Camera\ParallelCamera.h" />
+    <ClInclude Include="Header\Serializer\Scene\Camera\ParallelCameraSerializer.h" />
+    <ClInclude Include="Header\Scene\Surface\Flat\LineFlatSurface.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Flat\LineFlatSurfaceSerializer.h" />
+    <ClInclude Include="Header\Math\MathUtilities.h" />
+    <ClInclude Include="Header\Scene\Shape\Marched\MarchedObject.h" />
+    <ClInclude Include="Header\Scene\Shape\Marched\MarchedSphere.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Marched\MarchedSphereSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Marched\MarchedCone.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Marched\MarchedConeSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Marched\MarchedCylinder.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Marched\MarchedCylinderSerializer.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Header\Math\Vec2f.h" />
+    <ClInclude Include="Header\Utilities\ImageBuffer\ScaledImageBuffer.h" />
+    <ClInclude Include="Header\Utilities\ImageBuffer\SegmentedImageBuffer.h" />
+    <ClInclude Include="Header\Serializer\SerializerCatalog.h" />
+    <ClInclude Include="Header\Serializer\Math\Vec3fSerializer.h" />
+    <ClInclude Include="Header\Serializer\Math\Vec2fSerializer.h" />
+    <ClInclude Include="Header\Serializer\Math\RotationSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Sky\SolidColorSkySerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Sky\SkyBoxSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\SurfaceResultSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Flat\SolidFlatSurfaceSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Flat\RotatedFlatSurfaceSerializer.h" />
+    <ClInclude Include="Header\Serializer\SerializerId.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Uv\SolidUvSurfaceSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Surface\Uv\TexturedUvSurfaceSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\SphereSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\PlaneSerializer.h" />
+    <ClInclude Include="Header\Serializer\Scene\SceneSerializer.h" />
+    <ClInclude Include="Header\Utilities\Reference.h" />
+    <ClInclude Include="Header\Scene\Light\PointLight.h" />
+    <ClInclude Include="Header\Scene\Camera\PerspectiveCamera.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\TriangleMesh.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\TriangleMeshSerializer.h" />
+    <ClInclude Include="Header\Renderer\RenderSettings.h" />
+    <ClInclude Include="Header\Scene\Shape\Set\SetDifferenceObject.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Set\SetDifferenceObjectSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Set\UnionObject.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Set\UnionObjectSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Composite\TransformableObject.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Composite\TransformableobjectSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Prism.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\PrismSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Traced\Pyramid.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Traced\PyramidSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Marched\Torus.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Marched\TorusSerializer.h" />
+    <ClInclude Include="Header\Scene\Shape\Marched\Composite\RepeatedMarchedObject.h" />
+    <ClInclude Include="Header\Serializer\Scene\Shape\Marched\Composite\RepeatedMarchedObjectSerializer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Scene\Shape\Marched\MarchedCylinder.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Marched\MarchedCone.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Cone.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Marched\MarchedSphere.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Marched\Composite\RepeatedMarchedObject.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Marched\MarchedObject.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Pyramid.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Prism.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\CustomPlaneMesh.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\FlatPolygon.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Set\SetDifferenceObject.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Box.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Uv\CheckedUvSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Flat\LineFlatSurface.cpp" />
+    <ClCompile Include="Source\Scene\Fog\Fog.cpp" />
+    <ClCompile Include="Source\Scene\Fog\Formula\FormulaFog.cpp" />
+    <ClCompile Include="Source\Scene\Camera\ParallelCamera.cpp" />
+    <ClCompile Include="Source\Scene\Camera\PerspectiveCamera.cpp" />
+    <ClCompile Include="Source\Scene\Light\DirectionalLight.cpp" />
+    <ClCompile Include="Source\Scene\Light\PointLight.cpp" />
+    <ClCompile Include="Source\Math\Vec3f.cpp" />
+    <ClCompile Include="Source\Serializer\SerializerId.cpp" />
+    <ClCompile Include="Source\Utilities\ImageBuffer\SegmentedImageBuffer.cpp" />
+    <ClCompile Include="Source\Utilities\ImageBuffer\ScaledImageBuffer.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Clyinder.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Uv\GeneratedSquareUvSurface.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\Math\Ray.cpp" />
+    <ClCompile Include="Source\Math\Rotation.cpp" />
+    <ClCompile Include="Source\Renderer\Renderer.cpp" />
+    <ClCompile Include="Source\Renderer\ThreadInfo.cpp" />
+    <ClCompile Include="Source\Scene\Camera\Camera.cpp" />
+    <ClCompile Include="Source\Scene\Light\Light.cpp" />
+    <ClCompile Include="Source\Scene\Scene.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Object.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Plane.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\Sphere.cpp" />
+    <ClCompile Include="Source\Scene\Sky\Sky.cpp" />
+    <ClCompile Include="Source\Scene\Sky\SkyBox.cpp" />
+    <ClCompile Include="Source\Scene\Sky\SolidColorSky.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Flat\CheckedFlatSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Flat\FlatSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Flat\RotatedFlatSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Flat\SolidFlatSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\SurfaceIntersection.cpp" />
+    <ClCompile Include="Source\Scene\Surface\SurfaceResult.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Uv\SolidUvSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Uv\TexturedUvSurface.cpp" />
+    <ClCompile Include="Source\Scene\Surface\Uv\UvSurface.cpp" />
+    <ClCompile Include="Source\Math\Vec2f.cpp" />
+    <ClCompile Include="Source\Utilities\ImageBuffer\GlfwImageBuffer.cpp" />
+    <ClCompile Include="Source\Utilities\ImageBuffer\ImageBuffer.cpp" />
+    <ClCompile Include="Source\Utilities\ImageBuffer\StbImageBuffer.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Traced\TriangleMesh.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Set\UnionObject.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Composite\TransformableObject.cpp" />
+    <ClCompile Include="Source\Scene\Shape\Marched\Torus.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
